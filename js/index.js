@@ -57,3 +57,8 @@ destinationTitle.forEach(node => {
     false
     ) ;
 })
+
+document.getElementsByClassName("nav-link").addEventListener("click", function(event){
+    event.preventDefault();
+   handleFireButton();
+});
