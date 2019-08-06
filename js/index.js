@@ -13,8 +13,8 @@ mouseOver.addEventListener(
     false
   );
 
-  //keypress make the entire page disappear
-const gone = document.querySelector(".destination");
+ //keypress make the entire page disappear
+const gone = document.querySelector("body");
 gone.addEventListener("keydown", () => (gone.style.opacity = "0"));
 
 //moving mouse makes text come back
@@ -41,3 +41,19 @@ busPhoto.addEventListener(
   "drag",
   e => (e.target.style.transform = "scale(1.25)")
 );
+
+//moving mouse over destination titles turns them green
+const destinationTitle = document.querySelectorAll(".destination h4");
+
+destinationTitle.forEach(node => {
+    node.addEventListener("mousemove", function(event) {
+      event.target.style.color = "green";
+      250;
+      event.stopPropagation();
+      setTimeout(function() {
+        event.target.style.color = "";
+      }, 250);
+    },
+    false
+    ) ;
+})
