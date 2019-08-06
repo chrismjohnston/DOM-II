@@ -14,7 +14,7 @@ mouseOver.addEventListener(
   );
 
   //keypress make the entire page disappear
-const gone = document.querySelector("body");
+const gone = document.querySelector(".destination");
 gone.addEventListener("keydown", () => (gone.style.opacity = "0"));
 
 //moving mouse makes text come back
