@@ -34,3 +34,10 @@ signupButton.forEach(node => {
 window.addEventListener("load", function() {
     alert("Your page has loaded and Google says your page speed is fast");
   });
+
+  //drag the bus photo and it gets bigger by 125%
+const busPhoto = document.querySelector(".intro img");
+busPhoto.addEventListener(
+  "drag",
+  e => (e.target.style.transform = "scale(1.25)")
+);
