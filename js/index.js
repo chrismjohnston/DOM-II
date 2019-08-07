@@ -73,7 +73,7 @@ footer.addEventListener("contextmenu", function() {
   event.target.style.backgroundColor = "purple";
 });
 
-// 10 invert image
+// 10 invert image 
 const invertPhoto = document.getElementsByName('destination.jpg');
 invertPhoto.addEventListener('click', function() {
       event.target.style.visibility = 'hidden'});
